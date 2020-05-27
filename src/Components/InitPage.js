@@ -9,6 +9,7 @@ export default function InitPage(props) {
             <h1>{ props.stuff.something }</h1>
             <button onClick={() => history.push('/about')}>About page</button>
             <button onClick={() => history.push('/test')}>Test page</button>
+            <button onClick={() => history.push('/dogs')}>Dog List</button>
         </div>
     )
 }

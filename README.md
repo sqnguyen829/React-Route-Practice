@@ -28,3 +28,10 @@ Then we assign a varible history
 let history = useHistory()
 
 This will now let us get access to the routes we built
+
+
+**More route uasage**
+
+routes using class components
+
+routes using useParams
