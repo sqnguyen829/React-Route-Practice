@@ -1,0 +1,24 @@
+import React from "react";
+import { withRouter } from "react-router";
+
+// A simple component that shows the pathname of the current location
+class ClassCompTest extends React.Component {
+  state = {
+    testing:''
+  };
+
+  test = () => {
+      this.props.history.push('/home')
+  }
+
+  render() {
+
+    return (
+        <div>
+            <button onClick={() => this.test()}/>
+        </div>
+    )
+  }
+}
+
+export default withRouter(ClassCompTest);
