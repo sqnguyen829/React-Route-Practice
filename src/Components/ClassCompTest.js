@@ -20,5 +20,6 @@ class ClassCompTest extends React.Component {
     )
   }
 }
-
+//withRouter only needs to be imported and used like 
+//how its used in this class component so that it can access history
 export default withRouter(ClassCompTest);
