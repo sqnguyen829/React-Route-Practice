@@ -6,6 +6,7 @@ import Test from './Components/Test'
 import DogList from './Containers/DogList'
 import DogDetails from './Components/DogDetails'
 import { useHistory } from 'react-router'
+import ClassCompTest from './Components/ClassCompTest'
 
 function App() {
   let stuff = {
@@ -21,6 +22,7 @@ function App() {
       <Route exact path = '/test' component={ Test }/>
       <Route exact path = '/dogs' component={ () => <DogList history = { history }/>}/>
       <Route exact path = '/dogs/:id' component={ DogDetails } />
+      <Route exact path = '/classTesting' component={ ClassCompTest } />
     </BrowserRouter>
   );
 }

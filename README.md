@@ -17,7 +17,7 @@ npm install --save react-router-dom
 We need to import this where the route are being created
 import { BrowserRouter, Route } from 'react-router-dom'
 
-The exact key word is used when there are child routes to a certain route when assigning to <Route />
+The 'exact' key word is used when there are child routes to a certain route when assigning to <Route />. This let's the Route know distictly which route is being called. If it wasn't used the parent route would over ride the child route.
 
 To use these routes that were made we need to import from 'react-router' in the component that wants to redirect.
 
@@ -29,9 +29,8 @@ let history = useHistory()
 
 This will now let us get access to the routes we built
 
-
 **More route uasage**
 
 routes using class components
 
-routes using useParams
+routes using useParams, this allows us to acces values stored in the browser link such as the id for the dog

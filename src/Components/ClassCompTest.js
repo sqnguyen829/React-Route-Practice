@@ -8,14 +8,17 @@ class ClassCompTest extends React.Component {
   };
 
   test = () => {
-      this.props.history.push('/home')
+    //this next lin works because of withRouter allowing use access to this.props.history
+      this.props.history.push('/')
   }
 
   render() {
-
+    console.log('test')
     return (
         <div>
-            <button onClick={() => this.test()}/>
+            <button onClick={() => this.test()}>
+              Class Button
+            </button>
         </div>
     )
   }
